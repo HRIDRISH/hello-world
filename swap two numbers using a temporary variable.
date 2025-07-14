@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+
+    // 2 number input kora hol
+    printf("Enter the first number (a): ");
+    scanf("%d", &a);
+
+    printf("Enter the second number (b): ");
+    scanf("%d", &b);
+
+    // swap r agor display
+    printf("\nBefore swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    // Swap kora hol temporary variable r logot
+    temp = a;
+    a = b;
+    b = temp;
+
+    // swap pasor display
+    printf("\nAfter swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
+}
