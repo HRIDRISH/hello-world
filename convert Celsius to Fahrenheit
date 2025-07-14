@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+
+    // temperature input kora hol celsius ot
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    // fahrenheit loi convert kora hol
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    // result display kora hol
+    printf("%.2f Celsius = %.2f Fahrenheit\n", celsius, fahrenheit);
+
+    return 0;
+}
