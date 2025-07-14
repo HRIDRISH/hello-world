@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int num, reversed = 0, remainder;
+
+    // number input luwa hol
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    // number reverse kora hol
+    while (num != 0) {
+        remainder = num % 10;
+        reversed = reversed * 10 + remainder;
+        num /= 10;
+    }
+
+    // result display kora hol
+    printf("Reversed number: %d\n", reversed);
+
+    return 0;
+}
