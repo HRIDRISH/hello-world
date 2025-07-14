@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    unsigned long long factorial = 1;
+
+    // non-negative number r input luwa hol
+    printf("Enter a non-negative integer: ");
+    scanf("%d", &num);
+
+    //  valid input check kora hol
+    if (num < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } else {
+        //  factorial calculate kora hol
+        for (int i = 1; i <= num; ++i) {
+            factorial *= i;
+        }
+        // result display kora hol
+        printf("Factorial of %d is %llu\n", num, factorial);
+    }
+
+    return 0;
+}
